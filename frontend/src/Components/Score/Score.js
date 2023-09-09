@@ -1,0 +1,45 @@
+import React from 'react';
+import { PieChart, Pie, ResponsiveContainer } from 'recharts';
+import './Score.css'
+
+
+
+const Score = ({ userScore }) => {
+    console.log(userScore)
+    const data = userScore;
+    const pieData = [
+        { name: "completed", value: data, fill: "#FF0000" },
+        { name: "not-completed", value: 1 - data, fill: "transparent" },
+    ];
+
+    return (
+        <div className='ScoreBar'>
+            <h2>Score</h2>
+            <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                    <circle cx="50%" cy="50%" fill="white" r="50"></circle>
+                    <Pie
+                        data={pieData}
+                        dataKey="value"
+                        nameKey="Objectif"
+                        cx="50%"
+                        cy="50%"
+                        innerRadius={60}
+                        outerRadius={75}
+                        cornerRadius={10}
+                        startAngle={90}
+                        endAngle={450}
+                    />
+                </PieChart>
+            </ResponsiveContainer>
+            <div className='ProgressBar'>
+                <p>
+                    <span>{data * 100}%</span> <br />
+                    de votre <br />
+                    objectif
+                </p>
+            </div>
+        </div>
+    )
+}
+export default Score

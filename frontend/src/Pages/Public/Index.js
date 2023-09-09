@@ -1,4 +1,4 @@
-import { default as Login } from './Login/Login.js';
+import { default as Dashboard } from './Dashboard/Dashboard.js';
 
 
-export { Login };
+export { Dashboard };

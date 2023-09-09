@@ -1,0 +1,10 @@
+.vertical-nav-container p {
+    color: white;
+    transform: rotate(270deg);
+    font-size: 12px;
+    position: absolute;
+    bottom: 95px;
+    white-space: nowrap;
+    right: -10px;
+
+}

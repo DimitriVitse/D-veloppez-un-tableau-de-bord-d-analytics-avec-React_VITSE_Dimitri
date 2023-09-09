@@ -1,0 +1,33 @@
+/* ScoreBar */
+.ScoreBar {
+    width: 32%;
+    height: 218px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+    border-radius: 5px;
+    position: relative;
+}
+
+.ScoreBar h2 {
+    font-size: 18px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+/* ProgressBar */
+.ProgressBar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 145px;
+}
+
+.ProgressBar p {
+    color: grey;
+}
+
+.ProgressBar span {
+    color: black;
+    font-size: 26px;
+}
